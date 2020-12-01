@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Here you can find Sally contact information"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Sally Contact</title>
+    <!-- Link to Bootstrap/Bigma if using it. This is a common CSS framework that makes writing CSS easier.-->
+
+    <!-- Link to normalize CSS. A CSS stylesheet that helps to create more consistency across web browsers.-->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- Link to Google fonts if used -->
+    <!-- Link to external CSS stylesheet. The style sheet you create -->
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+
+    <!-- Link to Font Awesome or other icons/image service -->
+  </head>
+
+  <body id="application-root">
+    <!-- Script tags go within the body tags at the end -->
+
+    <!-- Link to cuid for creating id names -->
+    <!-- <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/cuid/1.3.8/browser-cuid.min.js"
+      integrity="sha512-AvtLzKgbVcTZJ0QZ3nLJoTGN2wiE/emjebM9xneyqhtEBRTsNB+8oeQGkOmyOF+gnJd7k3Zvnghs9m6EuTpTEw=="
+      crossorigin="anonymous"
+    ></script> -->
+
+    <!-- Link to Bootstrap Javascript if using Bootstrap CSS -->
+    <!-- <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
+
+    <!-- Link to jQuery -->
+    <!-- <script
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script> -->
+    <!-- Link to react, react development CDN and babel for JSX -->
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script type="text/babel">
+      // Our code will go here
+      function App(props) {
+        console.log(props);
+        return <div>{props.children}</div>;
+      }
+      // Nested elements inside the App
+      ReactDOM.render(
+        <App className="title">
+          <header>
+            <div id="img">
+              <img
+                src="https://ia.media-imdb.com/images/M/MV5BMTY5NzE3NzU3MF5BMl5BanBnXkFtZTgwMjg0NTQ5MDE@._V1_UX214_CR0,0,214,317_AL_.jpg"
+                alt=""
+              />
+            </div>
+            <h1 className="title">About me</h1>
+          </header>
+          <main>
+            <section id="introduction">
+              <p>
+                Hi, I'm Sally. I'm 25 and below you'll find more information
+                about me.
+              </p>
+            </section>
+            <br />
+            <section id="education">
+              <p>I have studied at:</p>
+              <ul>
+                <li>IES Bezmiliana</li>
+                <li>Minnesota University</li>
+              </ul>
+            </section>
+            <br />
+            <section id="works">
+              <p>I have worked at:</p>
+              <div id="works-list">
+                <ul>
+                  <li>
+                    Github as Engineer during 2018 and there I have to Lorem
+                    ipsum dolor sit amet, consectetur adipisicing elit. Lorem
+                    ipsum, dolor sit amet consectetur adipisicing elit. Sint,
+                    non!
+                  </li>
+                  <li>
+                    Jetbrains as Project manager during 2019 and I'm still
+                    working there. My work consist in A assumenda autem dolorem
+                    doloremque. Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. In, cumque.
+                  </li>
+                </ul>
+              </div>
+            </section>
+            <br />
+            <section id="contact-section">
+              <p>My contact information:</p>
+              <address id="contact-info">
+                <p>My name is Sally</p>
+                <p>
+                  My email is:{" "}
+                  <a href={`mailto://sally@IntenetExplorer.old`}>
+                    sally@IntenetExplorer.old
+                  </a>
+                </p>
+                <p>
+                  My phone number is:{" "}
+                  <a href={`tel:+34100572415`}>+34 100 57 24 15</a>
+                </p>
+              </address>
+            </section>
+          </main>
+        </App>,
+        document.querySelector("#application-root")
+      );
+    </script>
+    <!-- Link to javascript file -->
+    <!-- <script src="script.js"></script> -->
+  </body>
+</html>
